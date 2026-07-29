@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronic Court &amp; Police Management System | Nkosingivile Dlamini</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .project-detail {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 1rem 6% 5rem;
+        }
+
+        .project-detail-header {
+            margin-bottom: 2.5rem;
+        }
+
+        .project-detail-header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(1.8rem, 4vw, 2.6rem);
+            color: var(--text-dark);
+            margin-bottom: 0.8rem;
+            line-height: 1.25;
+        }
+
+        .project-detail-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.6rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .project-detail-body {
+            color: var(--text-muted);
+            font-size: 1.05rem;
+            line-height: 1.75;
+            margin-bottom: 1.2rem;
+        }
+
+        .project-detail-body strong {
+            color: var(--text-dark);
+        }
+
+        .detail-section {
+            margin: 2.5rem 0;
+        }
+
+        .detail-section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.4rem;
+            color: var(--pink-deep);
+            margin-bottom: 1rem;
+        }
+
+        .detail-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .detail-section ul li {
+            position: relative;
+            padding-left: 1.4rem;
+            margin-bottom: 0.55rem;
+            color: var(--text-muted);
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        .detail-section ul li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: var(--pink-main);
+            font-weight: 700;
+        }
+
+        .screenshot-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.2rem;
+            margin-top: 1.5rem;
+        }
+
+        .screenshot-grid figure {
+            margin: 0;
+            background: rgba(255, 255, 255, 0.9);
+            border: 1px solid rgba(255, 182, 193, 0.4);
+            border-radius: 14px;
+            overflow: hidden;
+            box-shadow: 0 6px 20px rgba(214, 51, 132, 0.08);
+        }
+
+        .screenshot-grid img {
+            width: 100%;
+            height: auto;
+            display: block;
+            max-height: 320px;
+            object-fit: cover;
+            object-position: top center;
+        }
+
+        .screenshot-grid a {
+            display: block;
+            text-decoration: none;
+        }
+
+        .screenshot-grid a:hover img {
+            opacity: 0.9;
+        }
+
+        .screenshot-grid figcaption {
+            padding: 0.65rem 0.9rem;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            text-align: center;
+            border-top: 1px solid rgba(255, 182, 193, 0.3);
+        }
+
+        .screenshot-full {
+            grid-column: 1 / -1;
+        }
+
+        .screenshot-full img {
+            max-height: 420px;
+            object-fit: contain;
+            background: #faf6f8;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 1.5rem;
+            color: var(--pink-deep);
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 500;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        .github-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-top: 0.5rem;
+            margin-right: 0.6rem;
+        }
+
+        @media (max-width: 650px) {
+            .screenshot-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+
+    <nav>
+        <div class="logo">Nkosingivile Dlamini</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html" class="active">Projects</a></li>
+            <li><a href="achievements.html">Achievements</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="project-detail">
+
+        <a href="projects.html" class="back-link">← Back to Projects</a>
+
+        <div class="project-detail-header">
+            <p class="eyebrow">Featured Project · 1st Prize STEM Expo 2025</p>
+            <h1>Electronic Court &amp; Police Management System</h1>
+            <div class="project-detail-meta">
+                <span class="tech-tags"><span>Flutter</span></span>
+                <span class="tech-tags"><span>Dart</span></span>
+                <span class="tech-tags"><span>Firebase Auth</span></span>
+                <span class="tech-tags"><span>Cloud Firestore</span></span>
+                <span class="tech-tags"><span>Firebase Storage</span></span>
+                <span class="tech-tags"><span>Cloud Messaging</span></span>
+            </div>
+            <p class="project-detail-body">
+                A digital system that digitizes the legal process from initial case
+                filing until resolution in court. It creates a shared database
+                accessible to police and courts so every party stays informed
+                throughout the process.
+            </p>
+            <a href="https://github.com/Vile2002/electronic_court" class="btn btn-primary github-btn" target="_blank" rel="noopener noreferrer">
+                View on GitHub →
+            </a>
+            <a href="projects.html" class="btn btn-secondary github-btn">
+                All Projects
+            </a>
+        </div>
+
+        <!-- OVERVIEW IMAGE -->
+        <div class="detail-section">
+            <h2>Overview</h2>
+            <div class="screenshot-grid">
+                <figure class="screenshot-full">
+                    <a href="project-images/court-1.jpg" target="_blank" rel="noopener noreferrer">
+                        <img src="project-images/court-1.jpg" alt="e-CPMS mobile app welcome screen">
+                    </a>
+                    <figcaption>Welcome to e-CPMS — Electronic Court &amp; Police Management System</figcaption>
+                </figure>
+            </div>
+        </div>
+
+        <!-- OBJECTIVES -->
+        <div class="detail-section">
+            <h2>Objectives</h2>
+            <ul>
+                <li>Develop a digital system for easy creation, storage, retrieval and updating of case records.</li>
+                <li>Establish a central database accessible to different courts and police departments.</li>
+                <li>Enable citizens to track case progress and receive current legal updates.</li>
+                <li>Provide a citizen portal for direct communication between citizens and courts.</li>
+            </ul>
+        </div>
+
+        <!-- KEY USERS -->
+        <div class="detail-section">
+            <h2>Key Users</h2>
+            <ul>
+                <li>Police</li>
+                <li>Prosecutors</li>
+                <li>Court Clerks</li>
+                <li>Judges</li>
+                <li>Citizens</li>
+            </ul>
+        </div>
+
+        <!-- DASHBOARDS -->
+        <div class="detail-section">
+            <h2>Role-based Dashboards</h2>
+            <p class="project-detail-body">
+                Police, prosecutors, court staff, judges and lawyers each have
+                dedicated dashboards tailored to their roles.
+            </p>
+            <div class="screenshot-grid">
+                <figure class="screenshot-full">
+                    <a href="project-images/court-3.jpg" target="_blank" rel="noopener noreferrer">
+                        <img src="project-images/court-3.jpg" alt="Role-based dashboards for police, prosecutors and courts">
+                    </a>
+                    <figcaption>Dashboards for Police, Prosecutors, Court, Judges and Lawyers</figcaption>
+                </figure>
+            </div>
+        </div>
+
+        <!-- POLICE FEATURES -->
+        <div class="detail-section">
+            <h2>Police Features</h2>
+            <ul>
+                <li>Digital case filing</li>
+                <li>Digital case transfer to prosecutor</li>
+                <li>Digital case storage and tracking</li>
+                <li>Advanced search of offenders</li>
+                <li>Quick repeat-offender detection</li>
+            </ul>
+            <p class="project-detail-body" style="margin-top: 1rem;">
+                Police can transfer cases to the prosecutor directly, the search unit,
+                or prosecutor clerks. On submit, the system auto-detects if the
+                suspect or victim appears in pending trial cases or probation records.
+            </p>
+            <div class="screenshot-grid">
+                <figure>
+                    <a href="project-images/court-4.jpg" target="_blank" rel="noopener noreferrer">
+                        <img src="project-images/court-4.jpg" alt="Police features and repeat offender detection">
+                    </a>
+                    <figcaption>Repeat offender detection &amp; case transfer</figcaption>
+                </figure>
+                <figure>
+                    <a href="project-images/court-2.jpg" target="_blank" rel="noopener noreferrer">
+                        <img src="project-images/court-2.jpg" alt="Objectives and technologies">
+                    </a>
+                    <figcaption>System objectives &amp; tech stack</figcaption>
+                </figure>
+            </div>
+        </div>
+
+        <!-- CITIZEN FEATURES -->
+        <div class="detail-section">
+            <h2>Citizen Features</h2>
+            <ul>
+                <li>View list of cases</li>
+                <li>Check case status</li>
+                <li>Track case journey</li>
+                <li>Receive up-to-date notifications</li>
+            </ul>
+            <p class="project-detail-body" style="margin-top: 1rem;">
+                Citizens log in with email, password and national ID. The legal portal
+                offers new and old laws, law firms and certified lawyers, departments
+                that assist with legal issues, courts and court news, plus emergency
+                help and legal chat.
+            </p>
+            <div class="screenshot-grid">
+                <figure class="screenshot-full">
+                    <a href="project-images/court-5.jpg" target="_blank" rel="noopener noreferrer">
+                        <img src="project-images/court-5.jpg" alt="Citizen login, dashboard and legal portal">
+                    </a>
+                    <figcaption>Citizen login, dashboard &amp; legal portal</figcaption>
+                </figure>
+            </div>
+        </div>
+
+        <!-- TECH -->
+        <div class="detail-section">
+            <h2>Technologies</h2>
+            <ul>
+                <li><strong>Frontend:</strong> Flutter, Dart</li>
+                <li><strong>Backend:</strong> Firebase Authentication, Cloud Firestore, Firebase Storage, Cloud Messaging</li>
+            </ul>
+            <div style="margin-top: 1.8rem;">
+                <a href="https://github.com/Vile2002/electronic_court" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                    View Code on GitHub →
+                </a>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Nkosingivile Dlamini. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>
