@@ -6,18 +6,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects | Nkosingivile Dlamini</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .project-card {
+            display: grid;
+            grid-template-columns: 70px 1fr;
+            gap: 1.5rem;
+            align-items: start;
+            padding: 1.8rem 1.6rem;
+            background: rgba(255, 255, 255, 0.75);
+            border: 1px solid rgba(255, 182, 193, 0.4);
+            border-radius: 18px;
+            color: inherit;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 20px rgba(214, 51, 132, 0.06);
+        }
+
+        .project-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 36px rgba(214, 51, 132, 0.14);
+            border-color: var(--pink-soft);
+            background: rgba(255, 255, 255, 0.95);
+        }
+
+        .project-info h2 a {
+            color: inherit;
+            text-decoration: none;
+            transition: color 0.25s ease;
+        }
+
+        .project-info h2 a:hover {
+            color: var(--pink-deep);
+        }
+
+        .project-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.7rem;
+            margin-top: 1rem;
+        }
+
+        .project-links a {
+            display: inline-block;
+            padding: 0.45rem 1.1rem;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            text-decoration: none;
+            transition: all 0.25s ease;
+        }
+
+        .link-details {
+            background: linear-gradient(135deg, var(--pink-main), var(--pink-deep));
+            color: white;
+            box-shadow: 0 4px 14px rgba(214, 51, 132, 0.25);
+        }
+
+        .link-details:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 18px rgba(214, 51, 132, 0.35);
+        }
+
+        .link-github {
+            background: white;
+            color: var(--pink-deep);
+            border: 1.5px solid var(--pink-soft);
+        }
+
+        .link-github:hover {
+            background: var(--pink-light);
+            border-color: var(--pink-main);
+        }
+
+        @media (max-width: 700px) {
+            .project-card {
+                grid-template-columns: 50px 1fr;
+                gap: 1rem;
+                padding: 1.4rem 1.2rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .project-card {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-    <!-- Soft floating shapes -->
     <div class="blob blob-1"></div>
     <div class="blob blob-2"></div>
     <div class="blob blob-3"></div>
 
-    <!-- =========================
-         NAVIGATION
-    ========================== -->
     <nav>
         <div class="logo">Nkosingivile Dlamini</div>
         <ul class="nav-links">
@@ -31,31 +112,26 @@
         </ul>
     </nav>
 
-
-    <!-- =========================
-         PAGE INTRO
-    ========================== -->
     <header class="page-intro">
         <p class="eyebrow">Portfolio</p>
         <h1>My Projects</h1>
+        <p class="page-intro-lead">
+            Software systems and technology solutions developed
+            through academic work and practical experience.
+        </p>
     </header>
 
-
-    <!-- =========================
-         PROJECTS
-    ========================== -->
     <main class="projects-main">
 
         <div class="projects-list">
 
             <!-- PROJECT 1 -->
-            <a href="https://github.com/Vile2002/electronic_court"
-               class="project-card"
-               target="_blank"
-               rel="noopener noreferrer">
+            <article class="project-card">
                 <div class="project-number">01</div>
                 <div class="project-info">
-                    <h2>Electronic Court &amp; Police Management System</h2>
+                    <h2>
+                        <a href="electronic-court.html">Electronic Court &amp; Police Management System</a>
+                    </h2>
                     <p>
                         A digital system that improves the management of legal
                         cases from filing through court resolution. Supports
@@ -70,18 +146,20 @@
                         <span>Firebase Auth</span>
                         <span>Cloud Firestore</span>
                     </div>
+                    <div class="project-links">
+                        <a href="electronic-court.html" class="link-details">View project details</a>
+                        <a href="https://github.com/Vile2002/electronic_court" class="link-github" target="_blank" rel="noopener noreferrer">GitHub →</a>
+                    </div>
                 </div>
-                <div class="project-arrow">→</div>
-            </a>
+            </article>
 
             <!-- PROJECT 2 -->
-            <a href="https://github.com/Vile2002/payroll-system"
-               class="project-card"
-               target="_blank"
-               rel="noopener noreferrer">
+            <article class="project-card">
                 <div class="project-number">02</div>
                 <div class="project-info">
-                    <h2> Payroll System</h2>
+                    <h2>
+                        <a href="payroll.html">Payroll System</a>
+                    </h2>
                     <p>
                         A web-based system designed to manage employee payroll
                         information. It allows administrators to record employee
@@ -97,46 +175,44 @@
                         <span>MySQL</span>
                         <span>XAMPP</span>
                     </div>
+                    <div class="project-links">
+                        <a href="payroll.html" class="link-details">View project details</a>
+                        <a href="https://github.com/Vile2002/payroll-system" class="link-github" target="_blank" rel="noopener noreferrer">GitHub →</a>
+                    </div>
                 </div>
-                <div class="project-arrow">→</div>
-            </a>
+            </article>
 
-            <!-- PROJECT 4 -->
-            <a href="https://github.com/Vile2002/furniture_inventory"
-               class="project-card"
-               target="_blank"
-               rel="noopener noreferrer">
+            <!-- PROJECT 3 -->
+            <article class="project-card">
                 <div class="project-number">03</div>
                 <div class="project-info">
-                    <h2>furniture_inventory</h2>
-                    <p>A digital inventory system developed to record, organise,
-                       and monitor furniture items. It enables users to add, update,
-                       search, and remove furniture records while keeping track of
-                       important information such as item names, quantities,
-                       categories, locations, and availability. The system helps
-                       improve inventory accuracy and makes furniture management
-                       faster and more efficient.
-                        
+                    <h2>
+                        <a href="furniture-inventory.html">Furniture Inventory System</a>
+                    </h2>
+                    <p>
+                        A digital inventory system developed to record, organise,
+                        and monitor furniture items. It enables users to add, update,
+                        search, and remove furniture records while keeping track of
+                        item names, quantities, categories, locations, and availability.
+                        Improves inventory accuracy and makes management faster.
                     </p>
                     <div class="tech-tags">
                         <span>Python</span>
-                        <span>Tkinker</span>
+                        <span>Tkinter</span>
                         <span>MySQL</span>
                         <span>XAMPP</span>
                     </div>
+                    <div class="project-links">
+                        <a href="furniture-inventory.html" class="link-details">View project details</a>
+                        <a href="https://github.com/Vile2002/furniture_inventory" class="link-github" target="_blank" rel="noopener noreferrer">GitHub →</a>
+                    </div>
                 </div>
-                <div class="project-arrow">→</div>
-            </a>
-
+            </article>
 
         </div>
 
     </main>
 
-
-    <!-- =========================
-         FOOTER
-    ========================== -->
     <footer>
         <p>© 2026 Nkosingivile Dlamini. All Rights Reserved.</p>
     </footer>
