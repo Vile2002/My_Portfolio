@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FNB App Academy Certificate | Nkosingivile Dlamini</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .ach-detail { max-width: 900px; margin: 0 auto; padding: 1rem 6% 5rem; }
+        .ach-detail h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(1.8rem, 4vw, 2.5rem);
+            color: var(--text-dark);
+            margin-bottom: 0.8rem;
+            line-height: 1.25;
+        }
+        .ach-detail .meta {
+            color: var(--pink-main);
+            font-weight: 500;
+            font-size: 0.95rem;
+            margin-bottom: 1.2rem;
+        }
+        .ach-detail .body {
+            color: var(--text-muted);
+            font-size: 1.05rem;
+            line-height: 1.75;
+            margin-bottom: 1rem;
+        }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 1.5rem;
+            color: var(--pink-deep);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .back-link:hover { text-decoration: underline; }
+        .photo-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            max-width: 520px;
+            gap: 1.2rem;
+            margin-top: 2rem;
+        }
+        .photo-grid figure {
+            margin: 0;
+            background: rgba(255,255,255,0.9);
+            border: 1px solid rgba(255,182,193,0.4);
+            border-radius: 14px;
+            overflow: hidden;
+            box-shadow: 0 6px 20px rgba(214,51,132,0.08);
+        }
+        .photo-grid img {
+            width: 100%;
+            height: auto;
+            display: block;
+            max-height: 480px;
+            object-fit: contain;
+            background: #faf6f8;
+        }
+        .photo-grid a { display: block; }
+        .photo-grid a:hover img { opacity: 0.9; }
+        .photo-grid figcaption {
+            padding: 0.65rem 0.9rem;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            text-align: center;
+            border-top: 1px solid rgba(255,182,193,0.3);
+        }
+        .detail-list { list-style: none; padding: 0; margin: 1rem 0 1.5rem; }
+        .detail-list li {
+            position: relative;
+            padding-left: 1.3rem;
+            margin-bottom: 0.45rem;
+            color: var(--text-muted);
+            font-size: 0.98rem;
+        }
+        .detail-list li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: var(--pink-main);
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+
+    <nav>
+        <div class="logo">Nkosingivile Dlamini</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="achievements.html" class="active">Achievements</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="ach-detail">
+        <a href="achievements.html" class="back-link">← Back to Achievements</a>
+
+        <p class="eyebrow">Certification</p>
+        <h1>Certificate in Full Stack Development</h1>
+        <p class="meta">FNB App Academy 2025 · IT Varsity · 32 Credits · Certificate No. AOTYAA072025</p>
+
+        <p class="body">
+            Awarded on 15 July 2025 after completing the FNB App Academy programme.
+            The course covered end-to-end app development — from design thinking and
+            UX to backend APIs, data management, and business skills.
+        </p>
+
+        <p class="body" style="margin-bottom: 0.4rem;"><strong style="color: var(--text-dark);">Topics covered:</strong></p>
+        <ul class="detail-list">
+            <li>App Strategies · GitHub and Collaboration</li>
+            <li>Build an App with HTML (The SDLC)</li>
+            <li>Principles of UX design · Basic Layouts &amp; Transitions</li>
+            <li>Design Thinking · APIs · Data Input &amp; Processing</li>
+            <li>User Centric App Development · Data Management and Analysis</li>
+            <li>Business Development · Backend Development (Build an API)</li>
+            <li>AI in Development · Business Funding · Marketing your App Business</li>
+        </ul>
+
+        <div class="photo-grid">
+            <figure>
+                <a href="fnb-certificate.jpg" target="_blank" rel="noopener noreferrer">
+                    <img src="fnb-certificate.jpg" alt="FNB App Academy 2025 Certificate in Full Stack Development">
+                </a>
+                <figcaption>FNB App Academy 2025 — Certificate in Full Stack Development</figcaption>
+            </figure>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 Nkosingivile Dlamini. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

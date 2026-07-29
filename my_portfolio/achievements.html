@@ -7,50 +7,40 @@
     <title>Achievements &amp; Certifications | Nkosingivile Dlamini</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        /* Control on-page image size */
-        .cert-figure img {
-            width: 100%;
-            max-height: 280px;
-            object-fit: cover;
-            object-position: top center;
-            display: block;
-            transition: opacity 0.25s ease;
+        .achievement-card {
+            cursor: pointer;
+            transition: all 0.3s ease;
         }
 
-        .cert-gallery-single .cert-figure img {
-            max-height: 360px;
-            object-fit: contain;
-            background: #f8f4f6;
+        .achievement-card:hover {
+            background: rgba(255, 255, 255, 0.95);
+            border-color: var(--pink-soft);
+            box-shadow: 0 8px 24px rgba(214, 51, 132, 0.1);
+            transform: translateY(-2px);
         }
 
-        .cert-figure a {
-            display: block;
+        .achievement-card h3 a {
+            color: inherit;
             text-decoration: none;
-            position: relative;
         }
 
-        .cert-figure a:hover img {
-            opacity: 0.88;
+        .achievement-card h3 a:hover {
+            color: var(--pink-deep);
         }
 
-        .cert-figure a::after {
-            content: "View full size";
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            padding: 0.5rem;
-            background: rgba(214, 51, 132, 0.85);
-            color: white;
-            font-size: 0.8rem;
+        .view-detail-link {
+            display: inline-block;
+            margin-top: 0.8rem;
+            font-size: 0.88rem;
             font-weight: 500;
-            text-align: center;
-            opacity: 0;
-            transition: opacity 0.25s ease;
+            color: var(--pink-deep);
+            text-decoration: none;
+            border-bottom: 1.5px solid transparent;
+            transition: border-color 0.2s ease;
         }
 
-        .cert-figure a:hover::after {
-            opacity: 1;
+        .view-detail-link:hover {
+            border-bottom-color: var(--pink-main);
         }
     </style>
 </head>
@@ -68,9 +58,8 @@
             <li><a href="about.html">About</a></li>
             <li><a href="skills.html">Skills</a></li>
             <li><a href="projects.html">Projects</a></li>
-            <li><a href="experience.html">Experience</a></li>
-            <li><a href="education.html">Education</a></li>
             <li><a href="achievements.html" class="active">Achievements</a></li>
+            <li><a href="education.html">Education</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
@@ -112,35 +101,19 @@
             </div>
             <div class="about-body">
                 <div class="achievement-list">
-                    <article class="achievement-card achievement-featured">
+                    <article class="achievement-card achievement-featured" onclick="location.href='achievement-stem.html'">
                         <div class="achievement-icon">🏆</div>
                         <div class="achievement-content">
-                            <h3>1<sup>st</sup> Prize — RSTP STEM Expo 2025</h3>
-                            <p class="achievement-meta">Technology · Tertiary Category · Macmillan Education &amp; Royal Science &amp; Technology Park</p>
+                            <h3><a href="achievement-stem.html">1<sup>st</sup> Prize — RSTP STEM Expo 2025</a></h3>
+                            <p class="achievement-meta">Technology · Tertiary Category · Macmillan Education &amp; RSTP</p>
                             <p>
                                 Awarded first place for the
                                 <strong>Electronic Court and Police Management System</strong>
-                                at the national RSTP STEM Expo 2025 — a premier
-                                innovation exhibition hosted by the Royal Science
-                                &amp; Technology Park in partnership with Macmillan Education.
+                                at the national RSTP STEM Expo 2025.
                             </p>
+                            <a href="achievement-stem.html" class="view-detail-link">View details &amp; photos →</a>
                         </div>
                     </article>
-                </div>
-
-                <div class="cert-gallery">
-                    <figure class="cert-figure">
-                        <a href="stem-winners-poster.jpg" target="_blank" rel="noopener noreferrer">
-                            <img src="stem-winners-poster.jpg" alt="RSTP STEM Expo 2025 Winners poster">
-                        </a>
-                        <figcaption>RSTP STEM Expo 2025 Winners — Technology Tertiary, 1st Prize</figcaption>
-                    </figure>
-                    <figure class="cert-figure">
-                        <a href="stem-certificate.jpg" target="_blank" rel="noopener noreferrer">
-                            <img src="stem-certificate.jpg" alt="STEM Expo Certificate of Participation">
-                        </a>
-                        <figcaption>Certificate of Participation — Macmillan RSTP STEM Expo 2025</figcaption>
-                    </figure>
                 </div>
             </div>
         </section>
@@ -152,32 +125,19 @@
             </div>
             <div class="about-body">
                 <div class="achievement-list">
-                    <article class="achievement-card">
+                    <article class="achievement-card" onclick="location.href='achievement-press.html'">
                         <div class="achievement-icon">📰</div>
                         <div class="achievement-content">
-                            <h3>Featured in Times of Eswatini</h3>
+                            <h3><a href="achievement-press.html">Featured in Times of Eswatini</a></h3>
                             <p class="achievement-meta">EMCU Bulletin · July 21, 2026</p>
                             <p>
                                 Recognised in the national press for winning 1st Prize
                                 at the RSTP STEM Expo 2025, highlighting the Electronic
-                                Court and Police Management System and EMCU’s growing
-                                impact on Eswatini’s digital future.
+                                Court and Police Management System.
                             </p>
+                            <a href="achievement-press.html" class="view-detail-link">View details &amp; photos →</a>
                         </div>
                     </article>
-                </div>
-
-                <div class="cert-gallery">
-                    <figure class="cert-figure">
-            
-                        <figcaption>EMCU Bulletin — Times of Eswatini, July 21, 2026</figcaption>
-                    </figure>
-                    <figure class="cert-figure">
-                        <a href="facebook-feature.jpg" target="_blank" rel="noopener noreferrer">
-                            <img src="facebook-feature.jpg" alt="EMCU Facebook feature">
-                        </a>
-                        <figcaption>EMCU social feature — “A Legacy of Tech Excellence”</figcaption>
-                    </figure>
                 </div>
             </div>
         </section>
@@ -189,28 +149,19 @@
             </div>
             <div class="about-body">
                 <div class="achievement-list">
-                    <article class="achievement-card achievement-featured">
+                    <article class="achievement-card achievement-featured" onclick="location.href='achievement-fnb.html'">
                         <div class="achievement-icon">📜</div>
                         <div class="achievement-content">
-                            <h3>Certificate in Full Stack Development</h3>
+                            <h3><a href="achievement-fnb.html">Certificate in Full Stack Development</a></h3>
                             <p class="achievement-meta">FNB App Academy 2025 · IT Varsity · 32 Credits</p>
                             <p>
                                 Awarded 15 July 2025 (Certificate No. AOTYAA072025).
-                                Covered app strategies, GitHub collaboration, HTML &amp; SDLC,
-                                UX design, APIs, data management, backend development,
-                                AI in development, business funding, and marketing.
+                                Covered app strategies, UX, APIs, backend development,
+                                AI in development, and business skills.
                             </p>
+                            <a href="achievement-fnb.html" class="view-detail-link">View details &amp; certificate →</a>
                         </div>
                     </article>
-                </div>
-
-                <div class="cert-gallery cert-gallery-single">
-                    <figure class="cert-figure">
-                        <a href="fnb-certificate.jpg" target="_blank" rel="noopener noreferrer">
-                            <img src="fnb-certificate.jpg" alt="FNB App Academy 2025 Certificate in Full Stack Development">
-                        </a>
-                        <figcaption>FNB App Academy 2025 — Certificate in Full Stack Development</figcaption>
-                    </figure>
                 </div>
             </div>
         </section>
